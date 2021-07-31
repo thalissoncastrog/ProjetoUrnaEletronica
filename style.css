@@ -1,8 +1,14 @@
+@keyframes pisca {
+    0% {opacity: 0.2;}
+    50% {opacity: 1;}
+    100% {opacity: 0.2;}
+}
 body{
     margin: 0;
     display:flex;
     justify-content:center;
     align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .urn{
@@ -20,6 +26,97 @@ body{
     width: 500px;
     height: 320px;
     background: linear-gradient(to right, #e8e8e8, #c1c1c1);
+    display: flex;
+    border: 2px solid #555;
+    flex-direction: column;
+}
+
+.screem-vote{
+    flex:1;
+    display:flex;
+}
+
+.screem-vote-left{
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    
+}
+
+.d-1{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.d-1-2{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d-1-3{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.d-1-3-spaceN{
+    padding-left: 25px;
+} 
+
+.numero{
+    display: inline-block;
+    width: 25px;
+    height: 35px;
+    border: 1px solid #000;
+    text-align: center;
+    line-height:35px;
+    font-size: 25px;
+}
+
+.pisca{
+    animation-name: pisca;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.d-1-4{
+    flex: 1;
+    display: flex;
+    line-height: 30px;
+}
+
+.screem-candidates{
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.d-1-image{
+    border: 1px solid #000;
+    background-color: #fff;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+}
+
+.d-1-image img{
+    width: 100%;
+}
+
+.d-1-image.small{
+    width: 80%;
+    font-size: 12px;
+}
+
+.screem-description{
+    height: 50px; 
+    border-top: 2px solid #000;
+    padding-left: 10px;
+    font-size: 13px;
 }
 
 .keyboard{
@@ -77,8 +174,8 @@ body{
 }
 
 .barr-default{
-    background-color: #c0c0c0;
+    background-color: #141414;
     width: 10px;
-    height: 35px;
+    height: 30px;
 
 }
