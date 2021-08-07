@@ -10,11 +10,12 @@
 </head>
 
 <body>
+
     <div class="table">
         <div class="urn">
-            <div class="screem">
-                <div class="screem-vote">
-                    <div class="screem-vote-left">
+            <div class="screen">
+                <div class="screen-vote">
+                    <div class="screen-vote-left">
                         <div class="d-1">
                             <span>SEU VOTO PARA</span>
                         </div>
@@ -37,19 +38,19 @@
                         </div>
                     </div>
 
-                    <div class="screem-candidates">
+                    <div class="screen-candidates">
                         <div class="d-1-image">
-                            <img src="images/PAPAI_NOEL_P.png" alt="Papai noel prefeito">
+                            <img src="" alt="">
                             Prefeito
                         </div>
                         <div class="d-1-image small">
-                            <img src="images/MORANGUINHO_DA_HABITAÇÃO_VP.png" alt="Moranguinho da habitação VICE-PREFEITO">
+                            <img src="" alt=""> 
                             Vice-Prefeito
                         </div>
                     </div>
                 </div>
 
-                <div class="screem-description">
+                <div class="screen-description">
                     Aperte a tecla: <br>
                     &ensp;CONFIRMA para CONFIRMAR este voto <br>
                     &emsp;CORRIGE para REINICIAR este voto
@@ -58,27 +59,27 @@
 
             <div class="keyboard">
                 <div class="keyboard-row">
-                    <div class="keyboard-botton">1</div>
-                    <div class="keyboard-botton">2</div>
-                    <div class="keyboard-botton">3</div>
+                    <div class="keyboard-botton" onclick="clickButton('1')" >1</div>
+                    <div class="keyboard-botton" onclick="clickButton('2')">2</div>
+                    <div class="keyboard-botton" onclick="clickButton('3')">3</div>
                 </div>
                 <div class="keyboard-row">
-                    <div class="keyboard-botton">4</div>
-                    <div class="keyboard-botton">5</div>
-                    <div class="keyboard-botton">6</div>
+                    <div class="keyboard-botton" onclick="clickButton('4')">4</div>
+                    <div class="keyboard-botton" onclick="clickButton('5')">5</div>
+                    <div class="keyboard-botton" onclick="clickButton('6')">6</div>
                 </div>
                 <div class="keyboard-row">
-                    <div class="keyboard-botton">7</div>
-                    <div class="keyboard-botton">8</div>
-                    <div class="keyboard-botton">9</div>
+                    <div class="keyboard-botton" onclick="clickButton('7')">7</div>
+                    <div class="keyboard-botton" onclick="clickButton('8')">8</div>
+                    <div class="keyboard-botton" onclick="clickButton('9')">9</div>
                 </div>
                 <div class="keyboard-row">
-                    <div class="keyboard-botton">0</div>
+                    <div class="keyboard-botton" onclick="clickButton('0')">0</div>
                 </div>
                 <div class="keyboard-row">
-                    <div class="keyboard-botton botton-white">BRANCO</div>
-                    <div class="keyboard-botton botton-revise">CORRIGE</div>
-                    <div class="keyboard-botton botton-done">CONFIRMA</div>
+                    <div class="keyboard-botton botton-white" onclick="blank()">BRANCO</div>
+                    <div class="keyboard-botton botton-revise" onclick="fix()">CORRIGE</div>
+                    <div class="keyboard-botton botton-done" onclick="done()">CONFIRMA</div>
                 </div>
             </div>
         </div>
@@ -97,6 +98,8 @@
         </div>
 
     </div>
+    <script src="etapas.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
